@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-vite-react-tailwind-rZv76CDUA1)
+- Live Site URL: [Add live site URL here](https://gentle-pie-d0895b.netlify.app/)
 
 ## Built with
 

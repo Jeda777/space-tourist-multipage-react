@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-vite-react-tailwind-rZv76CDUA1)
-- Live Site URL: [Add live site URL here](https://gentle-pie-d0895b.netlify.app/)
+- [Solution](https://www.frontendmentor.io/solutions/space-tourism-multipage-website-vite-react-tailwind-rZv76CDUA1)
+- [Live site](https://gentle-pie-d0895b.netlify.app/)
 
 ## Built with
 
@@ -39,7 +39,7 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [Vite] (https://vitejs.dev/) - Environment set up
+- [Vite](https://vitejs.dev/) - Environment set up
 - [React](https://reactjs.org/) - JS library
 - [Tailwind](https://tailwindcss.com/) - For styles
 

@@ -46,5 +46,5 @@ Users should be able to:
 ## Author
 
 - Website - [Jakub Jęda](https://github.com/Jeda777)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Jeda777](https://www.frontendmentor.io/profile/Jeda777)
 

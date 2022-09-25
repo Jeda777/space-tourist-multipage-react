@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --primary-color: #0B0D17;
+    --secondary-color: #D0D6F9;
+}
+html{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+h1, h2, h3, h4{
+    font-family: 'Bellefair', serif;
+}
+h1{
+    @apply text-white text-[80px] sm:text-[150px]
+}
+h2{
+    @apply text-white text-[56px] sm:text-[100px]
+}
+h3{
+    @apply text-white text-[24px] sm:text-[56px]
+}
+h4{
+    @apply text-white text-[28px] sm:text-[32px]
+}
+h5{
+    @apply text-white text-xl sm:text-[28px] tracking-wider
+}
+p{
+    @apply text-secondary lg:text-lg
+}
+
+
+
+
+
+nav{
+    @apply text-white uppercase h-full
+}
+#desktop-nav li{
+    @apply relative tracking-wide
+}
+#desktop-nav li:hover::after{
+    @apply bg-white bg-opacity-50 h-1 lg:h-[5px] bottom-[-34px] lg:bottom-[-32px] absolute left-[50%] translate-x-[-50%] transition-all
+}
+#desktop-nav span{
+    @apply font-bold hidden lg:inline-block
+}
+#desktop-nav::after{
+    content: '';
+    @apply hidden xl:inline-block w-[50%] 2xl:w-[70%] h-px absolute top-[50%] bg-white right-[94%] translate-y-[-50%] transition-all
+}
+#mobile-nav li{
+    @apply tracking-wide
+}
+#mobile-nav span{
+    @apply font-bold
+}
+.active-link::after{
+    @apply bg-white h-1 lg:h-[5px] bottom-[-34px] lg:bottom-[-32px] absolute left-[50%] translate-x-[-50%] z-10
+}
+.active-mobile-link::after{
+    content: '';
+    @apply bg-white h-8 w-1.5 right-0 absolute
+}
+
+
+
+
+
+#hero{
+    background: url('./assets/home/background-home-mobile.jpg');
+    @apply bg-no-repeat bg-cover
+}
+#explore-btn{
+    font-family: 'Bellefair', serif;
+    z-index: 2;
+}
+#explore-btn::after{
+    content: '';
+    position: absolute;
+    background-color: white;
+    z-index: -1;
+    opacity: 50%;
+    border-radius: 100%;
+    width: 0;
+    height: 0;
+    @apply transition-all
+}
+
+@media(min-width:768px){
+    #hero{
+        background: url('./assets/home/background-home-tablet.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+@media(min-width:1280px){
+    #explore-btn:hover::after{
+        width: 350px;
+        height: 350px;
+    }    
+}
+@media(min-width:1440px){
+    #hero{
+        background: url('./assets/home/background-home-desktop.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+
+
+
+
+
+#destination{
+    background: url('./assets/destination/background-destination-mobile.jpg');
+    @apply bg-no-repeat bg-cover
+}
+@media(min-width:768px){
+    #destination{
+        background: url('./assets/destination/background-destination-tablet.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+@media(min-width:1440px){
+    #destination{
+        background: url('./assets/destination/background-destination-desktop.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+#planet-btns button{
+    @apply relative tracking-wide
+}
+#planet-btns button:hover::after{
+    @apply bg-white bg-opacity-50 h-[2px] lg:h-1 bottom-[-5px] absolute left-[50%] translate-x-[-50%] transition-all
+}
+.active-planet::after{
+    @apply bg-white h-[2px] lg:h-1 bottom-[-5px] absolute left-[50%] translate-x-[-50%] z-10
+}
+
+
+
+
+
+#crew{
+    background: url('./assets/crew/background-crew-mobile.jpg');
+    @apply bg-no-repeat bg-cover
+}
+@media(min-width:768px){
+    #crew{
+        background: url('./assets/crew/background-crew-tablet.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+@media(min-width:1440px){
+    #crew{
+        background: url('./assets/crew/background-crew-desktop.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+#crew-img-container{
+    @apply relative w-full flex justify-center max-w-[600px]
+}
+#crew-img-container::after{
+    content: '';
+    @apply h-px w-[90%] bg-secondary absolute bottom-0
+}
+
+
+
+
+
+#technology{
+    background: url('./assets/technology/background-technology-mobile.jpg');
+    @apply bg-no-repeat bg-cover
+}
+@media(min-width:768px){
+    #technology{
+        background: url('./assets/technology/background-technology-tablet.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+@media(min-width:1440px){
+    #technology{
+        background: url('./assets/technology/background-technology-desktop.jpg');
+        @apply bg-no-repeat bg-cover
+    }
+}
+.tab-active{
+    @apply bg-white text-primary
+}

@@ -59,7 +59,7 @@ nav{
     @apply font-bold
 }
 .active-link::after{
-    @apply bg-white h-1 lg:h-[5px] bottom-[-34px] lg:bottom-[-32px] absolute left-[50%] translate-x-[-50%] z-10
+    @apply bg-white h-1 lg:h-[5px] bottom-[-34px] lg:bottom-[-32px] absolute left-[50%] translate-x-[-50%] z-30
 }
 .active-mobile-link::after{
     content: '';

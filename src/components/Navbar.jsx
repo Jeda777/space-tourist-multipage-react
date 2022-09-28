@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { iconClose, iconHamburger, logo} from '../assetsIndex'
+import { iconClose, iconHamburger, logo } from '../assetsIndex'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
@@ -32,12 +32,12 @@ const Navbar = () => {
         </ul>
       </nav>
 
-      <button onClick={() => setOpen((prev) => !prev)} className='z-20 sm:hidden pr-6'>
+      <button onClick={() => setOpen((prev) => !prev)} className='z-30 sm:hidden pr-6'>
         <img src={open ? iconClose : iconHamburger} alt="menu opening button" />
       </button>
 
       <nav id='mobile-nav' className={`sm:hidden bg-black bg-opacity-5 backdrop-blur-lg w-[70%] fixed top-0 p-8 pt-28 text-2xl
-      transition-all z-10 ${open ? 'right-0' : 'right-[-100%]'}`}>
+      transition-all z-20 ${open ? 'right-0' : 'right-[-100%]'}`}>
         <ul className='flex flex-col gap-6'>
           <li className={location.pathname === '/' ? 'active-mobile-link' : ''}>
             <Link to='/'><span>00</span> Home</Link>

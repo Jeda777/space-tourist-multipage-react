@@ -42,6 +42,7 @@ Users should be able to:
 - [Vite](https://vitejs.dev/) - Environment set up
 - [React](https://reactjs.org/) - JS library
 - [Tailwind](https://tailwindcss.com/) - For styles
+- [React-Swipeable](https://github.com/FormidableLabs/react-swipeable) - For handling swiping
 
 ## Author
 

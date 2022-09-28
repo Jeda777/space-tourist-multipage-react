@@ -17,15 +17,15 @@ const Navbar = () => {
           lg:after:w-[76px]`}>
             <Link to='/'><span>00&nbsp;</span> Home</Link>
           </li>
-          <li className={`${location.pathname === '/destination' ? 'active-link' : ''} after:w-[78px] md:after:w-[87px]
+          <li className={`${location.pathname.includes('/destination') ? 'active-link' : ''} after:w-[78px] md:after:w-[87px]
           lg:after:w-[132px]`}>
             <Link to='/destination'><span>01&nbsp;</span> Destination</Link>
           </li>
-          <li className={`${location.pathname === '/crew' ? 'active-link' : ''} after:w-[35px] md:after:w-[39px]
+          <li className={`${location.pathname.includes('/crew') ? 'active-link' : ''} after:w-[35px] md:after:w-[39px]
           lg:after:w-[78px]`}>
             <Link to='/crew'><span>02&nbsp;</span> Crew</Link>
           </li>
-          <li className={`${location.pathname === '/technology' ? 'active-link' : ''} after:w-[88px] md:after:w-[98px]
+          <li className={`${location.pathname.includes('/technology') ? 'active-link' : ''} after:w-[88px] md:after:w-[98px]
           lg:after:w-[148px]`}>
             <Link to='/technology'><span>03&nbsp;</span> Technoology</Link>
           </li>

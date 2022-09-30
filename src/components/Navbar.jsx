@@ -42,13 +42,13 @@ const Navbar = () => {
           <li className={location.pathname === '/' ? 'active-mobile-link' : ''}>
             <Link to='/'><span>00</span> Home</Link>
           </li>
-          <li className={location.pathname === '/destination' ? 'active-mobile-link' : ''}>
+          <li className={location.pathname.includes('/destination') ? 'active-mobile-link' : ''}>
             <Link to='/destination'><span>01</span> Destination</Link>
           </li>
-          <li className={location.pathname === '/crew' ? 'active-mobile-link' : ''}>
+          <li className={location.pathname.includes('/crew') ? 'active-mobile-link' : ''}>
             <Link to='/crew'><span>02</span> Crew</Link>
           </li>
-          <li className={location.pathname === '/technology' ? 'active-mobile-link' : ''}>
+          <li className={location.pathname.includes('/technology') ? 'active-mobile-link' : ''}>
             <Link to='/technology'><span>03</span> Technoology</Link>
           </li>
         </ul>

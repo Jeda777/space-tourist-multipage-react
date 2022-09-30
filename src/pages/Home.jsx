@@ -1,4 +1,3 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Home = () => {
@@ -21,7 +20,7 @@ const Home = () => {
         <div className='flex w-full justify-center lg:flex-1'>
           <Link to='/destination' id='explore-btn' className='bg-white w-36 xl:w-52 h-36 xl:h-52 rounded-full flex items-center 
           justify-center text-[20px]'>EXPLORE</Link>
-        </div> 
+        </div>
 
       </div>
 

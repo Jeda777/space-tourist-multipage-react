@@ -1,6 +1,6 @@
-import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
+import { planets } from '../../assetsIndex'
 
 const Planet = (i) => {
     const d = i.i
@@ -46,10 +46,7 @@ const Planet = (i) => {
     return (
         <div {...handlers} className='flex flex-col w-full gap-6 items-center lg:grid lg:grid-cols-2 lg:px-24'>
 
-            <img className='max-w-[170px] lg:max-w-[445px] w-full' src={d.image} onError={(e) => {
-                e.target.onError = null;
-                e.target.src = d.image2
-            }} alt={d.name} />
+            <img className='max-w-[170px] lg:max-w-[445px] w-full' src={planets[d.index]} alt={d.name} />
 
             <div className='flex flex-col gap-5'>
                 <div id='planet-btns' className='flex justify-center lg:justify-start gap-6 uppercase text-white text-lg sm:text-xl md:text-2xl xl:text-3xl'>

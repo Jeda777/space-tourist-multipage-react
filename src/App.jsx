@@ -1,5 +1,4 @@
-import React from 'react'
-import { Route, Routes, useLocation } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 
 import { Navbar } from './components/index'
 import { Crew, Destination, Home, Technology, Planet, Member, ExampleTech } from './pages/index'
@@ -7,7 +6,6 @@ import { Crew, Destination, Home, Technology, Planet, Member, ExampleTech } from
 import data from './data.json'
 
 const App = () => {
-  const location = useLocation()
   return (
     <div>
       <Navbar />

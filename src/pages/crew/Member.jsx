@@ -1,6 +1,6 @@
-import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
+import { members } from '../../assetsIndex'
 
 const Member = (i) => {
     const d = i.i
@@ -74,7 +74,7 @@ const Member = (i) => {
 
             <div id='crew-img-container'>
                 <img className='max-w-[180px] sm:max-w-[220px] md:max-w-[350px] lg:max-w-[400px] xl:max-w-[600px]'
-                    src={d.image} alt={d.name} />
+                    src={members[d.index]} alt={d.name} />
             </div>
 
         </div>

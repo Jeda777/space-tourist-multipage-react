@@ -1,6 +1,6 @@
-import React from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
+import { technologiesLandscape, technologiesPortrait } from '../../assetsIndex'
 
 const ExampleTech = (i) => {
     const d = i.i
@@ -59,12 +59,12 @@ const ExampleTech = (i) => {
             </div>
 
             <img
-                src={d.imageLandscape}
+                src={technologiesLandscape[d.index]}
                 alt={d.name}
                 className='xl:hidden order-1' />
 
             <img
-                src={d.imagePortrait}
+                src={technologiesPortrait[d.index]}
                 alt={d.name}
                 className='hidden xl:inline-block order-3' />
 

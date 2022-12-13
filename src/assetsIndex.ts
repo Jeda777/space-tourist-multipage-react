@@ -21,12 +21,4 @@ const members = [Douglas, Mark, Victor, Anousheh]
 const technologiesLandscape = [launchVechicleLandscape, spaceportLandscape, spaceCapsuleLandscape]
 const technologiesPortrait = [launchVechiclePortrait, spaceportPortrait, spaceCapsulePortrait]
 
-export {
-    iconClose,
-    iconHamburger,
-    logo,
-    planets,
-    members,
-    technologiesLandscape,
-    technologiesPortrait
-}
+export { iconClose, iconHamburger, logo, planets, members, technologiesLandscape, technologiesPortrait }

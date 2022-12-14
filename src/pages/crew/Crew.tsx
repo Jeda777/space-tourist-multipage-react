@@ -1,7 +1,7 @@
 import { Outlet, Navigate, useLocation } from 'react-router-dom'
 
 const Crew = () => {
-  let location = useLocation()
+  const location = useLocation()
 
   return (
     <section id='crew'>
